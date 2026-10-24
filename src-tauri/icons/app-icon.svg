@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0d1117"/>
+
+  <!-- Cocktail glass body (triangle) -->
+  <polygon points="256,100 400,320 112,320" fill="none" stroke="#f59e0b" stroke-width="18" stroke-linejoin="round"/>
+
+  <!-- Glass stem -->
+  <line x1="256" y1="320" x2="256" y2="390" stroke="#f59e0b" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Glass base -->
+  <line x1="200" y1="390" x2="312" y2="390" stroke="#f59e0b" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Liquid fill inside glass -->
+  <clipPath id="glass-clip">
+    <polygon points="256,100 400,320 112,320"/>
+  </clipPath>
+  <rect x="112" y="240" width="288" height="80" fill="#f59e0b" fill-opacity="0.18" clip-path="url(#glass-clip)"/>
+
+  <!-- Code lines inside glass (AI monitoring) -->
+  <g clip-path="url(#glass-clip)" opacity="0.85">
+    <!-- Line 1: short -->
+    <rect x="185" y="175" width="60" height="9" rx="4.5" fill="#f59e0b" opacity="0.9"/>
+    <!-- Line 2: medium -->
+    <rect x="185" y="196" width="90" height="9" rx="4.5" fill="#34d399" opacity="0.85"/>
+    <!-- Line 3: long -->
+    <rect x="185" y="217" width="75" height="9" rx="4.5" fill="#f59e0b" opacity="0.7"/>
+    <!-- Line 4: short -->
+    <rect x="195" y="238" width="45" height="9" rx="4.5" fill="#34d399" opacity="0.6"/>
+  </g>
+
+  <!-- Sparkle / AI dot top right of glass -->
+  <circle cx="370" cy="120" r="14" fill="#f59e0b" opacity="0.95"/>
+  <circle cx="370" cy="120" r="7" fill="#0d1117"/>
+
+  <!-- Small pulse rings around AI dot -->
+  <circle cx="370" cy="120" r="22" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.4"/>
+  <circle cx="370" cy="120" r="32" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.2"/>
+
+  <!-- Straw -->
+  <line x1="336" y1="130" x2="296" y2="310" stroke="#34d399" stroke-width="10" stroke-linecap="round" opacity="0.9"/>
+</svg>

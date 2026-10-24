@@ -1,0 +1,48 @@
+{
+  "name": "sidecar-cocktail",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.8.3",
+    "@tauri-apps/plugin-fs": "^2.7.1",
+    "@tauri-apps/plugin-notification": "^2",
+    "@tauri-apps/plugin-os": "^2",
+    "@tauri-apps/plugin-shell": "^2",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-syntax-highlighter": "^15.6.1",
+    "tailwind-merge": "^2.5.5",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3",
+    "vitest": "^4.1.12"
+  }
+}
